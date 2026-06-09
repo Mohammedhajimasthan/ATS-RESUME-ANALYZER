@@ -1,0 +1,68 @@
+body {
+  font-family: Inter, system-ui;
+  margin: 0;
+  transition: 0.3s;
+}
+
+body.light {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+body.dark {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.upload textarea, .upload input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.score {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+body.dark .card {
+  background: #1e293b;
+}
+
+.hidden {
+  display: none;
+}

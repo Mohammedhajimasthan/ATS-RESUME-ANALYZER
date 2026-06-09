@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ATSense – Resume Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+
+<header>
+  <h1>ATSense</h1>
+  <button onclick="toggleMode()">🌙 / ☀️</button>
+</header>
+
+<main>
+  <section class="upload">
+    <input type="file" id="file">
+    <textarea id="resume" placeholder="Paste your resume text"></textarea>
+    <textarea id="job" placeholder="Job description (optional)"></textarea>
+    <button onclick="analyze()">Check Resume</button>
+  </section>
+
+  <section id="result" class="hidden">
+    <div class="score">
+      <span id="score">0</span>
+      <p>ATS Score</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>✅ Strengths</h3>
+        <ul id="strengths"></ul>
+      </div>
+
+      <div class="card">
+        <h3>⚠️ Weaknesses</h3>
+        <ul id="weaknesses"></ul>
+      </div>
+
+      <div class="card">
+        <h3>🚀 Improvements</h3>
+        <ul id="improvements"></ul>
+      </div>
+
+      <div class="card">
+        <h3>❓ Missing Info</h3>
+        <ul id="questions"></ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
